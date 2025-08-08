@@ -12,9 +12,10 @@
 
     const fbKeywords = ['reels', 'people you may know', 'follow', 'anonymous member', 'anonymous participant'];
 
-    const targetClasses = ['x1lliihq', 'x1yztbdb', 'x1jx94hy'];
+    const targetClasses = ['x1yztbdb.x1n2onr6.xh8yej3.x1ja2u2z',]; // 'x1lliihq', 'x1jx94hy'
 
     function hideBlocks() {
+        // Hide posts
         targetClasses.forEach(className => {
             document.querySelectorAll(`div.${className}`).forEach(el => {
                 const text = el.textContent?.toLowerCase();
