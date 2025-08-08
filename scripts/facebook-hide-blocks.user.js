@@ -15,6 +15,9 @@
     const targetClasses = ['x1yztbdb.x1n2onr6.xh8yej3.x1ja2u2z',]; // 'x1lliihq', 'x1jx94hy'
 
     function hideBlocks() {
+        // Hide stories
+        document.querySelector(`div.x193iq5w.xgmub6v.x1ceravr`).style.display = 'none';
+        
         // Hide posts
         targetClasses.forEach(className => {
             document.querySelectorAll(`div.${className}`).forEach(el => {
