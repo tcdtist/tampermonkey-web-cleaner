@@ -28,6 +28,9 @@
       'youtube mix',
       'review phim',
     ],
+
+    // 3. Tự động chuyển hướng YouTube Shorts về trình phát chuẩn (/watch?v=...)
+    enableShortsRedirect: true,
   };
 
   // =========================================================================
@@ -125,7 +128,33 @@
     }
   }
 
+  // =========================================================================
+  // 3. MODULE CHUYỂN HƯỚNG SHORTS VỀ TRÌNH PHÁT CHUẨN (SPA Event Hook)
+  // =========================================================================
+  function applyShortsRedirect() {
+    if (!CONFIG.enableShortsRedirect) return;
+
+    const redirectToWatch = (urlPath) => {
+      if (!urlPath) return;
+      const match = urlPath.match(/\/shorts\/([a-zA-Z0-9_-]+)/);
+      if (match) {
+        window.location.replace(`/watch?v=${match[1]}`);
+      }
+    };
+
+    // 1. Kiểm tra ngay tức thì khi script nạp vào
+    redirectToWatch(window.location.pathname);
+
+    // 2. Bắt sự kiện điều hướng Client-side (SPA) của YouTube
+    window.addEventListener('yt-navigate-start', (event) => {
+      const targetUrl = event.detail?.url;
+      redirectToWatch(targetUrl);
+    });
+  }
+
   // Khởi chạy ngay lập tức khi tải trang
+  applyShortsRedirect();
+
   if (document.head || document.documentElement) {
     applyColumnAdjuster();
   } else {
