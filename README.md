@@ -4,7 +4,7 @@ Personal userscripts for browsing and cleaning web interfaces (Facebook, YouTube
 
 ## Usage
 
-1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser.
+1. Install a userscript manager in your browser (recommended: [Violentmonkey](https://violentmonkey.github.io/), or [Tampermonkey](https://www.tampermonkey.net/)).
 2. Install the desired script from `scripts/`:
    - `facebook-hide-blocks.user.js`: Hide reels, stories, suggestions, and ads on Facebook.
    - `youtube-hide-blocks.user.js`: Hide distracting sections on YouTube.
