@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Hide Sections on YouTube
-// @namespace    http://tampermonkey.net/
+// @namespace    Violentmonkey Scripts
 // @version      1.0.0
 // @author       tcdtist
 // @description  Hide blocks on YouTube

@@ -1,16 +1,14 @@
-# tampermonkey-web-cleaner
+# userscripts
 
-A personal space for tinkering with browser userscripts and tweaking web interfaces across browsers (Edge, Chrome, Safari, Firefox).
-
-## Overview
-
-This repository contains lightweight custom userscripts designed to clean up distracting UI elements, filter content, and optimize everyday browsing workflows on various websites.
+Personal userscripts for browsing and cleaning web interfaces (Facebook, YouTube).
 
 ## Usage
 
-1. Install a userscript manager like Tampermonkey or Violentmonkey on your browser.
-2. Add the desired script from the `scripts/` directory.
-3. Configure settings directly within the script metadata or variables if needed.
+1. Install [Tampermonkey](https://www.tampermonkey.net/) in your browser.
+2. Install the desired script from `scripts/`:
+   - `facebook-hide-blocks.user.js`: Hide reels, stories, suggestions, and ads on Facebook.
+   - `youtube-hide-blocks.user.js`: Hide distracting sections on YouTube.
+   - `youtube-columns-adjuster.user.js`: Adjust video grid columns on YouTube.
 
 ## License
 

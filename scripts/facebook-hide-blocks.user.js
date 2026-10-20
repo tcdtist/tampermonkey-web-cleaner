@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Hide Sections on Facebook (Safe Targeted)
-// @namespace    http://tampermonkey.net/
+// @namespace    Violentmonkey Scripts
 // @version      1.3
 // @author       tcdtist
 // @description  Ẩn Reels, Stories, Gợi ý kết bạn, Quảng cáo... trên Facebook

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube Columns Adjuster
-// @namespace    http://tampermonkey.net/
+// @namespace    Violentmonkey Scripts
 // @version      1.0.0
 // @author       tcdtist
 // @description  Adjust the number of video columns on YouTube
