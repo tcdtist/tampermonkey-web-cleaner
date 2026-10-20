@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Teams Test Mock</title>
+  <style>
+    body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; color: #242424; }
+    .f22iagw { display: flex; }
+    .___114frmd { width: 100%; }
+    .___5robsm0 { display: flex; flex-wrap: wrap; gap: 16px; width: 100%; box-sizing: border-box; }
+    .___qtm1ah0 { flex: 0 0 280px; width: 280px; margin-bottom: 16px; }
+    .fui-Card { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0; padding: 16px; min-height: 180px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box; }
+    .fui-CardFooter { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; padding-top: 10px; border-top: 1px solid #f0f0f0; }
+    .fui-CardFooter .fui-Flex { display: flex; align-items: center; gap: 8px; }
+    .fui-CardHeader { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
+    .fui-Avatar { width: 72px; height: 72px; background: #007878; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 600; border-radius: 8px; flex-shrink: 0; }
+    .fui-Accordion { width: 100%; }
+    .fui-AccordionItem { margin-bottom: 20px; }
+    .fui-AccordionHeader { padding: 8px 0; }
+    .fui-AccordionHeader__button { background: none; border: none; font-size: 15px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+    .fui-Button { background: none; border: none; text-align: left; cursor: pointer; font-size: 14px; font-weight: 400; padding: 0; }
+  </style>
+</head>
+  <div style="display: flex; flex-direction: row; min-height: 100vh;">
+    <!-- App Bar Navigation (Thanh điều hướng App bên trái của Teams) -->
+    <div class="___4vdui50 f22iagw f122n59 fsuw20m f1vx9l62 f1ja72i3" role="navigation" aria-label="Apps" style="width: 68px; background: #ebebeb; display: flex; flex-direction: column; align-items: center; padding: 8px 0; gap: 8px; flex-shrink: 0;">
+      <div><button type="button" id="app-btn-activity" aria-label="Activity" aria-pressed="false" class="fui-Button">Activity</button></div>
+      <div><button type="button" id="app-btn-chat" aria-label="Chat" aria-pressed="false" class="fui-Button">Chat</button></div>
+      <div><button type="button" id="app-btn-teams" aria-label="Teams" aria-pressed="true" class="fui-Button">Teams</button></div>
+      <div><button type="button" id="app-btn-calendar" aria-label="Calendar" aria-pressed="false" class="fui-Button">Calendar</button></div>
+      <div><button type="button" id="app-btn-calls" aria-label="Calls" aria-pressed="false" class="fui-Button">Calls</button></div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div style="flex: 1; padding: 20px;" id="main-content-wrapper">
+      <div data-tid="slot-measurer" data-app-name="schoolteams" data-slot-name="main">
+        <div class="fui-Primitive">
+          <div class="fui-Flex ___114frmd f22iagw" data-tid="teams-grid-view">
+        <div class="fui-Accordion">
+
+          <!-- 1. ClassTeamsSection (HK5) -->
+          <div class="fui-AccordionItem">
+            <div data-tid="ClassTeamsSection-header" class="fui-AccordionHeader">
+              <button aria-expanded="true" class="fui-AccordionHeader__button" type="button">
+                <span class="fui-StyledText">Classes</span>
+                <div id="ClassTeamsSection-description">4 teams</div>
+              </button>
+            </div>
+            <div data-tid="ClassTeamsSection-panel" class="fui-AccordionPanel">
+              <div class="fui-Primitive">
+                <div class="fui-Flex ___5robsm0 f22iagw">
+                  <!-- SE104 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-ClassTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">ST</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">SE104.G11.CN2.TTNT - Nhập môn Công nghệ phần mềm - ThS. Đặng Việt Dũng</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CE340 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-ClassTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">CT</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">CE340.G12.LT.TTNT - Trí tuệ nhân tạo cho hệ thống nhúng - ThS. Phan Đình Duy</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CS311 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-ClassTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">CT</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">CS311.G11.CN2.TTNT - Kỹ thuật lập trình trí tuệ nhân tạo - TS. Đặng Văn Thìn</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- SS008 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-ClassTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">SC</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">SS008.G11.CN1.CNTT - Kinh tế chính trị Mác – Lênin - ThS. Trần Thị Hoài Thương</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. OtherTeamsSection -->
+          <div class="fui-AccordionItem">
+            <div data-tid="OtherTeamsSection-header" class="fui-AccordionHeader">
+              <button aria-expanded="false" class="fui-AccordionHeader__button" type="button">
+                <span class="fui-StyledText">Teams</span>
+                <div id="OtherTeamsSection-description">1 team</div>
+              </button>
+            </div>
+            <div data-tid="OtherTeamsSection-panel" class="fui-AccordionPanel" style="display: none;">
+              <div class="fui-Primitive">
+                <div class="fui-Flex ___5robsm0 f22iagw">
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-OtherTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">VT</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">Vào thử xem nào!</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. HiddenTeamsSection -->
+          <div class="fui-AccordionItem">
+            <div data-tid="HiddenTeamsSection-header" class="fui-AccordionHeader">
+              <button aria-expanded="false" class="fui-AccordionHeader__button" type="button">
+                <span class="fui-StyledText">Hidden</span>
+                <div id="HiddenTeamsSection-description">16 teams</div>
+              </button>
+            </div>
+            <div data-tid="HiddenTeamsSection-panel" class="fui-AccordionPanel" style="display: none;">
+              <div class="fui-Primitive">
+                <div class="fui-Flex ___5robsm0 f22iagw">
+                  <!-- Lễ khai giảng -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">AK</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">[AI_LỄ KHAI GIẢNG T6/2025] LỚP CỬ NHÂN</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- IT002 HK2 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">IC</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">IT002.F11.CN1.CNTT - Lập trình hướng đối tượng</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ENG03 HK3 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">EC</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">ENG03.F21.CN1.CNTT - Anh văn 3 - ThS. Phạm</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- MA005 HK2 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">MC</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">MA005.F11.CN1.CNTT - Xác suất thống kê - Th</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- IT012 HK2 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><span class="fui-Avatar__initials">IC</span></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">IT012.F11.CN1.CNTT - Tổ chức và cấu trúc máy tính II</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CS112 HK4 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><img role="presentation" aria-hidden="true" draggable="false" class="fui-Avatar__image" src="https://teams.cloud.microsoft/api/mt/apac/beta/profilepicturev2/teams/cs112"></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">CS112.F31.LT.TTNT - Phân tích và thiết kế thuật toán - ThS. Đỗ Văn Nhơn</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CS106 HK4 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><img role="presentation" aria-hidden="true" draggable="false" class="fui-Avatar__image" src="https://teams.cloud.microsoft/api/mt/apac/beta/profilepicturev2/teams/cs106"></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">CS106.F31.CN2.TTNT - Trí tuệ nhân tạo - ThS. Phan Đình Duy</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CS114 HK4 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><img role="presentation" aria-hidden="true" draggable="false" class="fui-Avatar__image" src="https://teams.cloud.microsoft/api/mt/apac/beta/profilepicturev2/teams/cs114"></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">CS114.F31.CN2.TTNT - Máy học - ThS. Đặng Việt Dũng</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- SS007 HK4 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><img role="presentation" aria-hidden="true" draggable="false" class="fui-Avatar__image" src="https://teams.cloud.microsoft/api/mt/apac/beta/profilepicturev2/teams/ss007"></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">SS007.F31.CN1.CNTT - Triết học Mác – Lênin - TS. Vũ Trung Lương</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- IT005 HK4 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><img role="presentation" aria-hidden="true" draggable="false" class="fui-Avatar__image" src="https://teams.cloud.microsoft/api/mt/apac/beta/profilepicturev2/teams/it005"></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">IT005.F32.CN1.TTNT - Nhập môn mạng máy tính - ThS. Nguyễn Văn Toàn</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- SS006 HK1 -->
+                  <div class="fui-Flex ___qtm1ah0 f22iagw">
+                    <div class="fui-Primitive">
+                      <div role="group" data-tid="schoolteams-HiddenTeamsSection-team-card" class="fui-Card">
+                        <div class="fui-CardHeader">
+                          <div class="fui-CardHeader__image fui-Avatar"><img role="presentation" aria-hidden="true" draggable="false" class="fui-Avatar__image" src="https://teams.cloud.microsoft/api/mt/apac/beta/profilepicturev2/teams/ss006"></div>
+                          <div class="fui-CardHeader__header">
+                            <button data-testid="team-name" type="button" class="fui-Button"><span class="fui-StyledText">SS006.E31.CN1.CNTT - Pháp luật đại cương</span></button>
+                          </div>
+                        </div>
+                        <div class="fui-CardFooter ___dsvpdk0 f22iagw">
+                          <div class="fui-Flex ___1pl77cy f22iagw">
+                            <button type="button" data-testid="activity-icon" title="Announcements" class="fui-Button">📢</button>
+                            <button type="button" data-testid="assignment-icon" title="Assignments" class="fui-Button">📝</button>
+                            <button type="button" data-testid="classwork-icon" title="Classwork" class="fui-Button">📚</button>
+                          </div>
+                          <div class="fui-Flex ___wu9l0m0 f22iagw"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- #main-content-wrapper -->
+  </div> <!-- flex wrapper -->
+
+  <script>
+    // Giả lập tương tác mở/đóng Accordion của Teams
+    document.querySelectorAll('.fui-AccordionHeader__button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isExpanded));
+        const item = btn.closest('.fui-AccordionItem');
+        const panel = item.querySelector('.fui-AccordionPanel');
+        if (panel) {
+          panel.style.display = isExpanded ? 'none' : '';
+        }
+      });
+    });
+
+    // Giả lập chuyển đổi App trên App Bar (Chat, Teams, Calendar,...)
+    document.querySelectorAll('[role="navigation"][aria-label="Apps"] button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[role="navigation"][aria-label="Apps"] button').forEach(b => {
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.setAttribute('aria-pressed', 'true');
+
+        const isTeams = btn.getAttribute('aria-label') === 'Teams';
+        const gridView = document.querySelector('[data-tid="teams-grid-view"]');
+        if (gridView) {
+          gridView.style.display = isTeams ? '' : 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
