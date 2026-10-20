@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide Sections on Facebook (Safe Targeted)
 // @namespace    Violentmonkey Scripts
-// @version      1.3
+// @version      1.4
 // @author       tcdtist
 // @description  Ẩn Reels, Stories, Gợi ý kết bạn, Quảng cáo... trên Facebook
 // @match        https://www.facebook.com/*
@@ -46,9 +46,10 @@
   };
 
   const findFeedContainer = (element) =>
+    element.closest('div[role="article"]') ||
     element.closest('div[data-pagelet*="FeedUnit"]') ||
-    element.closest('div[class*="x1n2onr6"][class*="xh8yej3"]') ||
-    element.closest('div[role="article"]');
+    element.closest('div[data-tracking-duration-id]') ||
+    element.closest('div[class*="x1n2onr6"][class*="xh8yej3"]');
 
   const hideFacebookBlocks = () => {
     hideElement(document.querySelector(STORIES_SELECTOR));
@@ -82,9 +83,20 @@
       hideElement(findFeedContainer(link));
     });
 
-    hideAll('a[href*="/ads/about/"]', (link) => {
-      hideElement(findFeedContainer(link));
-    });
+    // Ẩn bài viết tài trợ nâng cao (Anti-obfuscation qua link giải thích ads & aria-label)
+    hideAll(
+      'a[href*="/ads/about/"], a[href*="/ad_preferences/"], a[href*="facebook.com/ads/"]',
+      (link) => {
+        hideElement(findFeedContainer(link));
+      }
+    );
+
+    hideAll(
+      '[aria-label="Sponsored"], [aria-label="Được tài trợ"], [aria-label*="Sponsored"], [aria-label*="Được tài trợ"]',
+      (el) => {
+        hideElement(findFeedContainer(el));
+      }
+    );
   };
 
   if (!window.location.hostname.includes("facebook.com")) return;
